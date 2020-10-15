@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-notificationmanager",
+  "version": "0.0.1",
+  "description": "AAn Android Cordova plugin that allows to manage the push notifications.",
+  "cordova": {
+    "id": "cordova-plugin-notificationmanager",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iktumi/NotificationManager.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "pushnotification",
+    "push",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Pedro Neto <pgneto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iktumi/NotificationManager/issues"
+  },
+  "homepage": "https://github.com/iktumi/NotificationManager/"
+}

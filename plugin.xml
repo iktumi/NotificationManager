@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-notificationmanager" version="0.0.1">
+    <name>NotificationManagerPlugin</name>
+
+    <description>An Android Cordova plugin that allows to manage the push notifications.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,pushnotification,push,notification,dismiss</keywords>
+    <repo>https://github.com/iktumi/NotificationManager.git</repo>
+    <issue>https://github.com/iktumi/NotificationManager/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/notificationManager.js" name="notificationManager">
+        <clobbers target="window.plugins.notificationManager" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NotificationManager">
+                <param name="android-package" value="com.g.cordova.plugin.NotificationManager"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/NotificationManager.java" target-dir="src/com/g/cordova/plugin" />
+    </platform>
+</plugin>
